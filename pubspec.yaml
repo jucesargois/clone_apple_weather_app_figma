@@ -82,6 +82,10 @@ flutter:
     - assets/images/icon_vector_weather_location.png
     - assets/images/image_compass_weather_location.png
     - assets/images/background_weather_location.png
+    - assets/images/map_bottom_nav_bar_weather_location.png
+    - assets/images/list_bottom_nav_bar_weather_location.png
+    - assets/images/arrow_bottom_nav_bar_weather_location.png
+    - assets/images/ellipse_bottom_nav_bar_weather_location.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
