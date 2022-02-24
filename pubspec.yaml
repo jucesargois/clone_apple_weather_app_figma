@@ -62,6 +62,22 @@ flutter:
     - assets/images/icon_home_options.png
     - assets/images/image_card_home_star.png
     - assets/images/image_home_card_2.png
+    - assets/images/icon_calendar_weather_location.png
+    - assets/images/icon_airquality_weather_location.png
+    - assets/images/image_group_weather_location.png
+    - assets/images/icon_arrow_weather_location.png
+    - assets/images/icon_temperature_weather_location.png
+    - assets/images/image_temperature_weather_location.png
+    - assets/images/icon_now_weather_location.png
+    - assets/images/icon_10pm_weather_location.png
+    - assets/images/icon_11pm_weather_location.png
+    - assets/images/icon_12pm_weather_location.png
+    - assets/images/icon_1am_weather_location.png
+    - assets/images/icon_sun_weather_location.png
+    - assets/images/icon_sunrise_weather_location.png
+    - assets/images/icon_wind_weather_location.png
+    - assets/images/icon_rainfall_weather_location.png
+    - assets/images/icon_humidity_weather_location.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
