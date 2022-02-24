@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/day_forecast_widget.dart';
+
 class WeatherLocationView extends StatelessWidget {
   const WeatherLocationView({Key? key}) : super(key: key);
 
@@ -8,7 +10,48 @@ class WeatherLocationView extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: Container(
         height: 78,
-        color: Colors.red,
+        decoration: BoxDecoration(
+          color: const Color(0XFF2A3040),
+          border: Border.all(
+            width: 0.2,
+            color: const Color.fromARGB(248, 124, 118, 118),
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(7.0),
+          child: Row(
+            children: [
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Image.asset(
+                    'assets/images/map_bottom_nav_bar_weather_location.png'),
+              ),
+              const SizedBox(
+                width: 165,
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: Image.asset(
+                    'assets/images/arrow_bottom_nav_bar_weather_location.png'),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Image.asset(
+                  'assets/images/ellipse_bottom_nav_bar_weather_location.png'),
+              const SizedBox(
+                width: 150,
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/home');
+                },
+                child: Image.asset(
+                    'assets/images/list_bottom_nav_bar_weather_location.png'),
+              ),
+            ],
+          ),
+        ),
       ),
       body: Container(
         decoration: const BoxDecoration(
@@ -68,7 +111,7 @@ class WeatherLocationView extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     border: Border.all(
                       width: 0.2,
-                      color: Color.fromARGB(248, 124, 118, 118),
+                      color: const Color.fromARGB(248, 124, 118, 118),
                     ),
                     color: Colors.transparent.withOpacity(0.2)),
                 child: Padding(
@@ -94,10 +137,10 @@ class WeatherLocationView extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 17, color: Colors.white),
                               ),
-                              const SizedBox(height: 20),
+                              const SizedBox(height: 29),
                               Image.asset(
                                   'assets/images/icon_now_weather_location.png'),
-                              const SizedBox(height: 24),
+                              const SizedBox(height: 27),
                               const Text(
                                 '21°',
                                 style: TextStyle(
@@ -169,7 +212,7 @@ class WeatherLocationView extends StatelessWidget {
                               const SizedBox(height: 24),
                               Image.asset(
                                   'assets/images/icon_1am_weather_location.png'),
-                              SizedBox(height: 24),
+                              const SizedBox(height: 24),
                               const Text(
                                 '19°',
                                 style: TextStyle(
@@ -186,95 +229,7 @@ class WeatherLocationView extends StatelessWidget {
               const SizedBox(
                 height: 8,
               ),
-              Container(
-                width: 370,
-                decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(15)),
-                child: Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Image.asset(
-                            'assets/images/icon_calendar_weather_location.png',
-                          ),
-                          const SizedBox(width: 5),
-                          const Text(
-                            '10-DAY FORECAST',
-                            style: TextStyle(fontSize: 15),
-                          ),
-                        ],
-                      ),
-                      const Divider(
-                        height: 10,
-                        color: Colors.red,
-                      ),
-                      Container(
-                        width: 303,
-                        height: 55,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: const [
-                            Text('data'),
-                            Icon(Icons.circle),
-                            Text('data'),
-                            Icon(Icons.line_weight),
-                            Text('data'),
-                            Divider(
-                              color: Colors.red,
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Divider(
-                        height: 2,
-                        color: Colors.red,
-                      ),
-                      Container(
-                        width: 303,
-                        height: 55,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: const [
-                            Text('data'),
-                            Icon(Icons.circle),
-                            Text('data'),
-                            Icon(Icons.line_weight),
-                            Text('data'),
-                          ],
-                        ),
-                      ),
-                      const Divider(
-                        height: 2,
-                        color: Colors.red,
-                      ),
-                      Container(
-                        width: 303,
-                        height: 55,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: const [
-                            Text('data'),
-                            Icon(Icons.circle),
-                            Text('data'),
-                            Icon(Icons.line_weight),
-                            Text('data'),
-                            Divider(
-                              color: Colors.red,
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Divider(
-                        height: 2,
-                        color: Colors.red,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+             DayForecastWidget(),
               const SizedBox(
                 height: 10,
               ),
