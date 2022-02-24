@@ -78,6 +78,10 @@ flutter:
     - assets/images/icon_wind_weather_location.png
     - assets/images/icon_rainfall_weather_location.png
     - assets/images/icon_humidity_weather_location.png
+    - assets/images/line_uv_index_weather_location.png
+    - assets/images/icon_vector_weather_location.png
+    - assets/images/image_compass_weather_location.png
+    - assets/images/background_weather_location.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
