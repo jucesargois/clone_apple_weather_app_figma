@@ -86,6 +86,9 @@ flutter:
     - assets/images/list_bottom_nav_bar_weather_location.png
     - assets/images/arrow_bottom_nav_bar_weather_location.png
     - assets/images/ellipse_bottom_nav_bar_weather_location.png
+    - assets/images/percent_forecast_1.png
+    - assets/images/sun_yellow_day_forecast.png
+    - assets/images/cloud_rain_day_forecast.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
