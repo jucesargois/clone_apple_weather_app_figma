@@ -35,7 +35,7 @@ class CardDayForecastWidget extends StatelessWidget {
               height: 10,
               color: Colors.grey,
             ),
-            Container(
+            SizedBox(
               width: 303,
               height: 55,
               child: Row(
@@ -177,6 +177,7 @@ class CardDayForecastWidget extends StatelessWidget {
 }
 
 //Inserir parametro de porcentagem
+// ignore: must_be_immutable
 class CardDayForecast extends StatelessWidget {
   String day;
   String image;
@@ -192,7 +193,7 @@ class CardDayForecast extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 303,
       height: 55,
       child: Row(
@@ -207,7 +208,7 @@ class CardDayForecast extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 13),
-          Image.asset('$image'),
+          Image.asset(image),
           const SizedBox(width: 15),
           Text(
             temp,
@@ -217,7 +218,7 @@ class CardDayForecast extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 10),
-          Image.asset('$secondImage'),
+          Image.asset(secondImage),
           const SizedBox(width: 9),
           Text(
             secondTemp,
