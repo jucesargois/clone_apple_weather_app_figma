@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
       initialRoute: "/home",
       routes: {
         "/home": (context) => const HomeView(),
-        "/weather_location": (context) => const WeatherLocationView(),
+        "/weather_location": (context) =>  WeatherLocationView(),
       },
-      home: const WeatherLocationView(),
+      home:  WeatherLocationView(),
     );
   }
 }
