@@ -12,7 +12,7 @@ class HomeView extends StatelessWidget {
         automaticallyImplyLeading: false,
         actions: [
           Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Image.asset("assets/images/icon_home_options.png"),
           )
         ],
@@ -81,7 +81,8 @@ class HomeView extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap: () {
-                         Navigator.pushReplacementNamed(context, "/weather_location");
+                        Navigator.pushReplacementNamed(
+                            context, "/weather_location");
                       },
                       child: Container(
                         width: 400,
